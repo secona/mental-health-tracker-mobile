@@ -22,10 +22,15 @@ class _MoodEntryFormPageState extends State<MoodEntryFormPage> {
         title: const Center(
           child: Text(
             'Form Tambah Mood Kamu Hari ini',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
         backgroundColor: Theme.of(context).colorScheme.primary,
         foregroundColor: Colors.white,
+        iconTheme: IconThemeData(color: Theme.of(context).colorScheme.onPrimary),
       ),
       drawer: const LeftDrawer(),
       body: Form(
